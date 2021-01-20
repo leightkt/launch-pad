@@ -3,6 +3,7 @@ import './App.css';
 import React, { Component } from 'react';
 import ThePlanets from './components/ThePlanets'
 import logo from './Launch3.png'
+import alien from './assets/chat-bot.png'
 
 class App extends Component {
 
@@ -27,7 +28,11 @@ class App extends Component {
     return (
       <div>
         <header>
-          <img src={logo} alt="Launch Pad, helping you find a new home that is out of this world!"/>
+          <section className="header-content">
+            <img src={logo} alt="Launch Pad, helping you find a new home that is out of this world!"/>
+            <img src={alien} alt="alien chat-bot"/>
+          </section>
+          
         </header>
         <ThePlanets planets={this.state.planets}/>
         

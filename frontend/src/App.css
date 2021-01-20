@@ -1,8 +1,15 @@
+body {
+  background-color: rgb(220, 185, 250);
+}
+
 header {
+  background-color: rgb(241, 192, 241);
   display: flex;
   justify-content: center;
   padding-top: 3rem;
-  box-shadow: 0 4px 2px -2px gray;
+  padding: 2rem;
+  box-shadow: 0 4px 2px -2px;
+  /* position: fixed; */
 }
 
 img{
@@ -10,14 +17,26 @@ img{
   width: 20;
 }
 
-section {
+/* section {
   height: 75vh;
   margin: 0rem;
+} */
+
+.planets {
+  /* background-color: rgb(220, 185, 250); */
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .planet {
+  background-color: rgb(241, 192, 241);
   height: 25rem;
   width: 15rem;
   margin: 3rem;
-  box-shadow: 5px 4px 2px gray;
+  padding-left: 1rem;
+  box-shadow: 5px 4px 8px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
