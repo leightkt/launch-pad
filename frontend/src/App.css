@@ -32,7 +32,11 @@ img{
 }
 
 .planet {
-  /* background-color: rgb(241, 192, 241); */
+   background-color: #1AA6A5;
+   border: solid;
+   border-color: #3B7B89;
+   border-width: 5px;
+   color: white;
   height: 25rem;
   width: 15rem;
   margin: 3rem;
