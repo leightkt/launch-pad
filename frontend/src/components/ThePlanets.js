@@ -7,20 +7,20 @@ export default function ThePlanets(props){
         <section className="planets">
 
             {props.planets.map(planet => (
-                <div className="planet">
-                    <div>
+                
+                    <div className="planet">
                         <h2>{planet.englishName}</h2>
                         <section className="planet-info">
-                            <p>{planet.avg_home_price}</p>
-                            <p>{planet.radius}</p>
-                            <p>{planet.gravity}</p>
-                            <p>{planet.distance_from_earch}</p>
-                            <p>{planet.has_water}</p>
+                            <p>avg home price: ${planet.avg_home_price}</p>
+                            <p>radius: {planet.radius}</p>
+                            <p>gravity: {planet.gravity}</p>
+                            <p>distance from earth: {planet.distance_from_earch}</p>
+                            <p>has water? {planet.has_water.toString()}</p>
 
                         </section>
                     </div>
 
-                </div>
+                
             ))}
 
         </section>
