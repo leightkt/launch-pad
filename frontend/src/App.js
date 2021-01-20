@@ -22,7 +22,7 @@ class App extends Component {
 
     return (
       <div>
-        <header><h1>LaunchPad</h1><p>Helping you find a new home that is out of this world!</p></header>
+        <header><img src="./Launch3.png" alt="Launch Pad, helping you find a new home that is out of this world!"/></header>
         <ThePlanets planets={this.state.planets}/>
         
       </div>
