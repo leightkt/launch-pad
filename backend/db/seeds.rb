@@ -12,6 +12,7 @@ def has_water
     [true, false].sample
 end
 
+
 planets.each do |planet|
     Planet.create(
         englishName: planet["englishName"],
@@ -20,6 +21,7 @@ planets.each do |planet|
         avg_home_price: rand(100..1000000000),
         temperature: rand(-388..800),
         distance_from_earch: rand(41..999),
-        has_water: has_water
+        has_water: has_water,
+        image: "~frontend/src/assets/" + planet["englishName"].gsub(/\s+/, "")
         )
 end
