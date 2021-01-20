@@ -1,14 +1,16 @@
 body {
-  background-color: rgb(220, 185, 250);
+  /* background-color: rgb(220, 185, 250); */
 }
 
 header {
-  background-color: rgb(241, 192, 241);
+  background-color: #BBA5EB;
   display: flex;
   justify-content: center;
   padding-top: 3rem;
   padding: 2rem;
-  box-shadow: 0 4px 2px -2px;
+  /* box-shadow: 0 4px 2px -2px; */
+  border-style: none none solid none;
+  border-width: thin;
   /* position: fixed; */
 }
 
@@ -36,13 +38,22 @@ header {
 }
 
 .planet {
-  background-color: rgb(241, 192, 241);
+  /* background-color: rgb(241, 192, 241); */
   height: 25rem;
   width: 15rem;
   margin: 3rem;
   padding-left: 1rem;
+  padding-right: 1rem;
   box-shadow: 5px 4px 8px gray;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* .planet-info {
+  text-transform: capitalize;
+} */
+
+.planet h2 {
+  text-transform: uppercase;
 }
