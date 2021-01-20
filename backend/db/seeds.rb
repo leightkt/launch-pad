@@ -22,6 +22,6 @@ planets.each do |planet|
         temperature: rand(-388..800),
         distance_from_earch: rand(41..999),
         has_water: has_water,
-        image: "~frontend/src/assets/" + planet["englishName"].gsub(/\s+/, "")
+        image: "~frontend/src/assets/" + planet["englishName"].gsub(/\s+/, "") + ".jpg"
         )
 end
