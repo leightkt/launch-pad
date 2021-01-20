@@ -1,4 +1,4 @@
-import PlanetPic from '../assets/Earth.jpg'
+import Saturn from '../assets/Saturn.jpg'
 
 export default function ThePlanets(props){
     console.log(props.planets)
@@ -10,7 +10,7 @@ export default function ThePlanets(props){
                 
                     <div className="planet">
                         <h2>{planet.englishName}</h2>
-                        <img src={planet.image} alt={planet.englishName}/>
+                        <img className="planet-image" src={Saturn} alt={planet.englishName}/>
                         <section className="planet-info">
                             <p><b>Avg Home Price:</b> ${planet.avg_home_price}</p>
                             <p><b>Radius:</b> {planet.radius}</p>

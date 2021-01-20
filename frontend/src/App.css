@@ -14,6 +14,12 @@ header {
   /* position: fixed; */
 }
 
+.header-content {
+  width: 100rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 #logo {
   height: 10rem;
   width: 20;
@@ -22,6 +28,16 @@ header {
 #alien {
   height:3rem;
   
+}
+
+.chat-box {
+  padding: 2rem;
+  height: 5rem;
+  background-color: rgb(249, 250, 250);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -53,6 +69,10 @@ header {
 /* .planet-info {
   text-transform: capitalize;
 } */
+
+.planet-image {
+  height: 8rem;
+}
 
 .planet h2 {
   text-transform: uppercase;

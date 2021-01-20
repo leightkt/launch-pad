@@ -38,10 +38,14 @@ class App extends Component {
             <img id="logo"src={logo} alt="Launch Pad, helping you find a new home that is out of this world!"/>
             
               {
-              this.state.isClicked ?
-              <div className="chat-box">How can I help you find your new intergalactic home? 
-                <input type="text"/><input type="submit"/> </div> :
-              null
+              this.state.isClicked ? 
+              <section id="alien-chat-box">
+                <div className="chat-box"> How can I help you find your new intergalactic home?
+                  <div>
+                    <input type="text"/><input type="submit"/> </div>
+                  </div> 
+                   
+              </section> : null
                 }
 
             
