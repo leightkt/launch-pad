@@ -2,6 +2,7 @@
 import './App.css';
 import React, { Component } from 'react';
 import ThePlanets from './components/ThePlanets'
+import logo from './Launch3.png'
 
 class App extends Component {
 
@@ -10,11 +11,14 @@ class App extends Component {
   }
 
   componentDidMount(){
-    fetch('https://api.le-systeme-solaire.net/rest/bodies')
+    fetch('http://localhost:3000/planets')
       .then(response => response.json())
       .then(bodies => {
-        
-      })
+        bodies.map(planet => (
+          this.setState({planets: [...this.state.planets, planet]})
+        ))
+      }
+      )
   }
 
 
@@ -22,7 +26,9 @@ class App extends Component {
 
     return (
       <div>
-        <header><img src="./Launch3.png" alt="Launch Pad, helping you find a new home that is out of this world!"/></header>
+        <header>
+          <img src={logo} alt="Launch Pad, helping you find a new home that is out of this world!"/>
+        </header>
         <ThePlanets planets={this.state.planets}/>
         
       </div>

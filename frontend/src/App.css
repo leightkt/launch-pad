@@ -1,7 +1,23 @@
 header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   padding-top: 3rem;
   box-shadow: 0 4px 2px -2px gray;
+}
+
+img{
+  height: 10rem;
+  width: 20;
+}
+
+section {
+  height: 75vh;
+  margin: 0rem;
+}
+
+.planet {
+  height: 25rem;
+  width: 15rem;
+  margin: 3rem;
+  box-shadow: 5px 4px 2px gray;
 }
