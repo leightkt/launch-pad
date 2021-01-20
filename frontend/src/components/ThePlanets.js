@@ -10,7 +10,7 @@ export default function ThePlanets(props){
                 
                     <div className="planet">
                         <h2>{planet.englishName}</h2>
-                        <img src={PlanetPic} alt={planet.englishName}/>
+                        <img src={planet.image} alt={planet.englishName}/>
                         <section className="planet-info">
                             <p>avg home price: ${planet.avg_home_price}</p>
                             <p>radius: {planet.radius}</p>
