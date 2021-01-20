@@ -14,10 +14,16 @@ header {
   /* position: fixed; */
 }
 
-img{
+#logo {
   height: 10rem;
   width: 20;
 }
+
+#alien {
+  height:3rem;
+  
+}
+
 
 /* section {
   height: 75vh;
