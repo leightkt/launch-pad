@@ -1,7 +1,7 @@
 import Saturn from '../assets/Saturn.jpg'
 
 export default function ThePlanets(props){
-    console.log(props.planets)
+    
 
     return(
         <section className="planets">

@@ -10,6 +10,8 @@ class App extends Component {
   state={
     planets: [],
     isClicked: false,
+    input: "",
+    messages: [],
   }
 
   componentDidMount(){
@@ -27,6 +29,30 @@ class App extends Component {
     this.setState({isClicked: !this.state.isClicked})
   }
 
+  handleSubmit = (event) => {
+    event.preventDefault()
+    this.setState({messages: [...this.state.messages, this.state.input]})
+    this.setState({input: ""})
+
+  }
+
+  handleChange = (event) => {
+    this.setState({input: event.target.value})
+  }
+
+  removeMessage= (event) => {
+    const indexOfMessage = this.state.messages.indexOf(event.message)
+    console.log(event.message)
+    console.log(indexOfMessage)
+    
+    this.setState({messages: []})
+    
+    // this.state.messages.splice(indexOfMessage, 1)
+    this.setState({messages: this.state.messages.filter(message => message !== event.message)})
+
+    
+  }
+
 
 
   render(){
@@ -41,10 +67,23 @@ class App extends Component {
               this.state.isClicked ? 
               <section id="alien-chat-box">
                 <div className="chat-box"> How can I help you find your new intergalactic home?
+
+                {this.state.messages.map(message => (
+                  <div className="message">
+                    <p >{message} </p>
+                    <p className="x-box" value={message} onClick={() => this.removeMessage({message})}>X</p>
+                  </div>
+                ))}
+
                   <div>
-                    <input type="text"/><input type="submit"/> </div>
-                  </div> 
-                   
+                    <form onSubmit={this.handleSubmit}>
+                      <input onChange={this.handleChange} type="text" value={this.state.input}/>
+                      <input  type="submit" /> 
+                    </form>
+                  </div>
+                    
+                </div> 
+              
               </section> : null
                 }
 
