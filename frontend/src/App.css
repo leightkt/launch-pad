@@ -40,6 +40,11 @@ header {
   justify-content: space-between;
 }
 
+.message {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /* section {
   height: 75vh;
